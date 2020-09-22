@@ -1,0 +1,162 @@
+@charset "UTF-8";
+
+body {
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  padding-top: 60px;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+.fixed{
+  position: fixed;
+}
+
+/* ▼▼▼ここからheader▼▼▼ */
+
+header{
+    height: 60px;
+    display: flex;
+    width: 100%;
+    top: 0;
+    left: 0;
+  background-color: #fff;
+    /* flex-direction: row; */
+    vertical-align: middle;
+    box-shadow:  0 10px 10px #ececec;
+    /* position: fixed; */
+    /* background-color: yellowgreen; */
+    justify-content: flex-start;
+    margin-bottom: 60px;
+  }
+  
+  
+  .mainTitle{
+    align-content: center;
+    font-weight: 800;
+    margin: auto;
+    font-size: 30px;
+    display: block;
+    color: #2680BF;
+    margin: auto;
+}
+
+.toPost{
+  align-content: center;
+  display: block;
+  color: #2680BF;
+  position: absolute;
+  left: 80%;
+  top: 12px;
+  border: solid;
+  border-color: #2680bf;
+  border-radius: 8px; 
+  padding:5px 20px;
+}
+
+
+
+/* ▲▲▲ここまでHEADER▲▲▲ */
+
+
+/* ▼▼▼ここからレスポンシブ▼▼▼ */
+
+/* 小 */
+@media screen and (min-width:480px) { 
+   .toPost{
+    align-content: center;
+    display: block;
+    position: absolute;
+    /* width: 300px; */
+    left: 80%;
+    top: 12px;
+    border-radius: 8px; 
+    padding:3px 10px !important;
+    
+}
+
+/* 中 */
+@media screen and (min-width:768px) and ( max-width:1024px) {
+  .toPost{
+    align-content: center;
+    display: block;
+    color: #2680BF;
+    position: absolute;
+    left: 80%;
+    top: 14px;
+    border: solid;
+    border-color: #2680bf;
+    border-radius: 8px; 
+    padding:3px 10px !important;
+  }
+
+  
+}
+
+/* 大 */
+@media screen and (min-width:1024px) {
+  /*　画面サイズが1024pxからはここを読み込む　*/
+  /* .toPost{
+    align-content: center;
+    display: block;
+    color: #2680BF;
+    position: absolute;
+    left: 80%;
+    top: 10px;
+    border: solid;
+    border-color: #2680bf;
+    border-radius: 8px; 
+    padding:3px 10px !important;
+  } */
+
+}
+
+/* ▲▲▲ここまでレスポンシブ▲▲▲ */
+
+.wrapper {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.article_list {
+  margin: 0;
+  text-align: left;
+}
+
+article {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  border-bottom:2px solid #dbdbdb;
+  margin: 0 auto;
+  width: 100%;
+}
+
+figure {
+  margin: 0;
+}
+
+.image {
+  padding: 20px;
+  background-color: #707070;
+}
+
+.draft_info {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.draft_title {
+  display: inline-block;
+  margin: 0;
+}
+
+.author {
+  display: inline-block;
+  margin: 0;
+}
